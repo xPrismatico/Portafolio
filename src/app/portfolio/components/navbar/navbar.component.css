@@ -2,7 +2,3 @@
   background: radial-gradient(circle, rgb(9, 88, 153) 0%, rgb(12, 12, 24) 100%);
   min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la pantalla */
 }
-
-.text-white {
-  color: white;
-}
