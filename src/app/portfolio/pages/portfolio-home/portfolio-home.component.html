@@ -1,8 +1,10 @@
-<portfolio-navbar></portfolio-navbar>
+
 
 
 <div class="gradient-bg">
-
+  <div class="pb-32">
+    <portfolio-navbar></portfolio-navbar>
+  </div>
   <!--IMAGEN-->
   <div id="sobre-mi" class="flex flex-col items-center py-8">
     <portfolio-avatar></portfolio-avatar>
@@ -10,15 +12,24 @@
     <p class="text-center text-xl text-white mt-4 max-w-2xl mx-4">Estudiante de Ingeniería Civil en Computación e Informática en la Universidad Católica del Norte de Antofagasta, Chile. Apasionado por desarrollar soluciones de software innovadoras, creativas y de calidad. Experiencia en liderazgo de proyectos de software. Aspirando a Ingeniero de Software y Desarrollador Web Fullstack.</p>
   </div>
 
+  <!--REDES SOCIALES PROFESIONALES-->
+  <div class="pb-32 flex justify-center space-x-4">
+    <a href="https://www.linkedin.com/in/samuel-fuentes-ávila-178344228/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-transparent border border-white rounded-lg hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300">
+      Linkedin
+    </a>
+    <a href="mailto:srfuentesavila@gmail.com" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-transparent border border-white rounded-lg hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300">
+      Contáctame
+    </a>
+  </div>
 
   <!--HABILIDADES TÉCNICAS Y BLANDAS-->
-  <div>
+  <div >
     <portfolio-info-card></portfolio-info-card>
   </div>
 
 
   <!--PROYECTOS DESTACADOS-->
-  <div id="proyectos">
+  <div class="pb-32" id="proyectos">
     <div class="container mx-auto px-4 py-8">
     </div>
     <portfolio-card></portfolio-card>
@@ -26,7 +37,9 @@
 
 
   <!--FORMULARIO DE CONTACTO-->
-
+  <div class="pb-32">
+    <portfolio-form></portfolio-form>
+  </div>
 
 
 
