@@ -12,7 +12,7 @@ Para iniciar un servidor de desarrollo local, sigue estos pasos:
 git clone https://github.com/xPrismatico/Portafolio
 ```
 
-2. Clona el repositorio:
+2. Navega al directorio del proyecto:
 
 ```bash
 cd Portafolio
@@ -29,9 +29,9 @@ npm install
 ng serve -o
 ```
 
-Una vez que el servidor esté en funcionamiento, abre tu navegador y navega a `http://localhost:4200/`. La aplicación se recargará automáticamente cada vez que modifiques alguno de los archivos fuente.
+Una vez que el servidor esté en funcionamiento, abre tu navegador y navega a [http://localhost:4200/]. La aplicación se recargará automáticamente cada vez que modifiques alguno de los archivos fuente.
 
 ## Despliegue en Vercel
 Puedes acceder a la página desplegada en Vercel sin necesidad de descargar nada ni ejecutar comandos adicionales. Simplemente visita el siguiente enlace:
 
-`https://samuel-fuentes.vercel.app/home`
+[https://samuel-fuentes.vercel.app/home]

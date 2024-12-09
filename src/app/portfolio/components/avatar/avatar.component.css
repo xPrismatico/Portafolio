@@ -1,3 +1,7 @@
 .avatar-bg {
   background-color: #14171d; /* Puedes cambiar este color al que prefieras */
 }
+
+.custom-h1-color {
+  color: var(--h1-color, rgb(255, 174, 0)); /* Valor por defecto: blanco */
+}
