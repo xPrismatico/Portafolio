@@ -2,3 +2,23 @@
   background: radial-gradient(circle, rgb(9, 88, 153) 0%, rgb(12, 12, 24) 100%);
   min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la pantalla */
 }
+
+nav {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+a:hover {
+  color: #3b82f6; /* Azul claro */
+  background-color: rgba(255, 255, 255, 0); /* Fondo claro al pasar el mouse */
+}

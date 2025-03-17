@@ -1,24 +1,63 @@
-<div class="container mx-auto px-4 py-8">
-  <h1 class="text-white text-5xl font-bold text-center mb-10">Proyectos</h1>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="container mx-auto px-4 py-4">
+
+  <!-- mb: margen bottom. mt: margen top. mx: margen eje X. my: margen eje Y-->
+
+  <!-- Sección Proyectos -->
+  <h1 class="text-shadow text-white text-5xl font-bold text-center mb-32 justify-center items-center"> Proyectos </h1>
+
+  <!-- Grid de Proyectos -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
 
     <!-- Proyecto 1 -->
-    <div class="max-w-sm bg-transparent rounded-lg shadow">
+    <div class="max-w-sm bg-gray-900 bg-opacity-30 rounded-lg shadow transform transition hover:scale-105">
       <img class="rounded-t-lg w-full h-50 object-cover" src="/projects/ecommerce.png" alt="Tienda UCN" />
       <div class="p-5">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Tienda UCN</h5>
-        <p class="mb-3 font-normal text-white">Plataforma de e-commerce con una API REST de backend en ASP.NET Core y clientes en Angular (web) e Ionic (móvil). Autenticación de usuarios con JWT, gestión de productos, carrito de compras, procesos de pago, administración de clientes y ventas, manejo de imágenes en la nube, roles de administrador y cliente.</p>
+
+        <!-- Título -->
+        <h5 class="text-shadow mb-2 text-2xl font-bold tracking-tight text-white">Tienda UCN</h5>
+
+        <!-- Descripción -->
+        <p class="mb-3 font-normal text-white">E-commerce de Productos (API REST, Cliente Web y Móvil). Gestión de productos, Carrito de compras, Filtros y búsqueda, Autenticación de usuarios, Roles de cliente y admin, Administración de ventas y clientes, imágenes en la nube.</p>
         <p class="mb-3 font-normal text-white"><span class="font-bold">Rol:</span> Líder de equipo, Programador Fullstack.</p>
 
+        <!-- Etiquetas de tecnologías -->
+        <div class="flex flex-wrap gap-2 mt-3 mb-3">
+          <div class="px-3 py-1 bg-gray-900 text-white text-sm font-medium rounded-lg">
+            .NET
+          </div>
+          <div class="px-3 py-1 bg-gray-900 text-white text-sm font-medium rounded-lg">
+            C#
+          </div>
+          <div class="px-3 py-1 bg-gray-900 text-white text-sm font-medium rounded-lg">
+            Angular
+          </div>
+          <div class="px-3 py-1 bg-gray-900 text-white text-sm font-medium rounded-lg">
+            Ionic
+          </div>
+          <div class="px-3 py-1 bg-gray-900 text-white text-sm font-medium rounded-lg">
+            TypeScript
+          </div>
+          <div class="px-3 py-1 bg-gray-900 text-white text-sm font-medium rounded-lg">
+            Tailwind
+          </div>
+          <div class="px-3 py-1 bg-gray-900 text-white text-sm font-medium rounded-lg">
+            CSS
+          </div>
+          <div class="px-3 py-1 bg-gray-900 text-white text-sm font-medium rounded-lg">
+            HTML
+          </div>
 
+        </div>
+
+        <!-- Enlaces -->
         <div class="flex flex-wrap gap-2">
-          <a href="https://github.com/Intro-Desarrollo-Web-Movil/TallerIDWM-Frontend" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-transparent border border-white rounded-lg hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300">
+          <a href="https://github.com/xPrismatico/TallerIDWM-Frontend" class="border-colorbtn inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-transparent border border-white rounded-lg hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300">
             <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
             </svg>
             Frontend
           </a>
-          <a href="https://github.com/Intro-Desarrollo-Web-Movil/TallerIDWM" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-transparent border border-white rounded-lg hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300">
+          <a href="https://github.com/xPrismatico/TallerIDWM-Backend" class="border-colorbtn inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-transparent border border-white rounded-lg hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300">
             <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
             </svg>
@@ -29,14 +68,29 @@
     </div>
 
     <!-- Proyecto 2 -->
-    <div class="max-w-sm bg-transparent rounded-lg shadow">
+    <div class="max-w-sm bg-gray-900 bg-opacity-30 rounded-lg shadow transform transition hover:scale-105">
       <img class="rounded-t-lg w-full h-50 object-cover" src="/projects/Bibliotech_app.png" alt="Tienda UCN" />
       <div class="p-5">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Bibliotech Gestión de Biblioteca</h5>
-        <p class="mb-3 text-white font-normal"> Aplicación de escritorio con interfaz gráfica de Gestión de biblioteca en Java utilizando JForms. Permitiendo buscar, prestar, devolver y agregar libros mediante un menú interactivo. Incluye validación de credenciales para iniciar sesión, archivos de datos de usuarios y libros, y un archivo de registro con las transacciónes realizadas.</p>
 
+        <!-- Título -->
+        <h5 class="text-shadow mb-2 text-2xl font-bold tracking-tight text-white">Bibliotech Gestión de Biblioteca</h5>
+
+        <!-- Descripción -->
+        <p class="mb-3 text-white font-normal"> Gestión de Biblioteca. App de Escritorio para buscar, prestar, devolver y agregar libros en un menú interactivo. Inventario con archivos de usuarios, libros y registro de transacciones. Incluye validación de credenciales.
+        </p>
+
+        <!-- Etiquetas de tecnologías -->
+        <div class="flex flex-wrap gap-2 mt-3 mb-3">
+          <div class="px-3 py-1 bg-gray-900 text-white text-sm font-medium rounded-lg">
+            Java
+          </div>
+          <div class="px-3 py-1 bg-gray-900 text-white text-sm font-medium rounded-lg">
+            JForms
+          </div>
+        </div>
+        <!-- Enlaces -->
         <div class="flex flex-wrap gap-2">
-          <a href="https://github.com/xPrismatico/Taller-5-PA" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-transparent border border-white rounded-lg hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300">
+          <a href="https://github.com/xPrismatico/Taller-5-PA" class="border-colorbtn inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-transparent border border-white rounded-lg hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300">
             <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
             </svg>
@@ -47,30 +101,76 @@
     </div>
 
     <!-- Proyecto 3 -->
-    <div class="max-w-sm bg-transparent rounded-lg shadow">
+    <div class="max-w-sm bg-gray-900 bg-opacity-30 rounded-lg shadow transform transition hover:scale-105">
       <img class="rounded-t-lg w-full h-50 object-cover" src="/projects/VitokosCoffe.png" alt="Tienda UCN" />
       <div class="p-5">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Vitoko's Coffee</h5>
-        <p class="mb-3 font-normal text-white">Aplicación de escritorio interfaz gráfica para registrar ventas de productos en una cafetería, modificar precios, agregar o eliminar productos e iniciar sesión. Desarrollada en Visual Studio utilizando Windows Forms que interactúa con una Base de datos MySQL</p>
-         <div class="flex flex-wrap gap-2">
-          <a href="https://github.com/Talleres-Informatica/Taller-2-Base-de-Datos" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-transparent border border-white rounded-lg hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300">
+
+        <!-- Título -->
+        <h5 class="text-shadow mb-2 text-2xl font-bold tracking-tight text-white">Vitoko's Coffee</h5>
+
+        <!-- Descripción -->
+        <p class="mb-3 font-normal text-white">Gestión de Cafetería. App de escritorio para registrar ventas de productos, modificar precios, agregar o eliminar productos e iniciar sesión. Roles de Cliente y Admin.
+        </p>
+
+        <!-- Etiquetas de tecnologías -->
+
+        <div class="flex flex-wrap gap-2 mt-3 mb-3">
+          <div class="px-3 py-1 bg-gray-900 text-white text-sm font-medium rounded-lg">
+            C#
+          </div>
+          <div class="px-3 py-1 bg-gray-900 text-white text-sm font-medium rounded-lg">
+            Windows Forms
+          </div>
+          <div class="px-3 py-1 bg-gray-900 text-white text-sm font-medium rounded-lg">
+            MySQL
+          </div>
+        </div>
+
+        <!-- Enlaces -->
+        <div class="flex flex-wrap gap-2">
+          <a href="https://github.com/Talleres-Informatica/Taller-2-Base-de-Datos" class="border-colorbtn inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-transparent border border-white rounded-lg hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300">
             <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
             </svg>
             Repositorio
           </a>
         </div>
+
       </div>
     </div>
 
     <!-- Proyecto 4 -->
-    <div class="max-w-sm bg-transparent rounded-lg shadow">
+    <div class="max-w-sm bg-gray-900 bg-opacity-30 rounded-lg shadow transform transition hover:scale-105">
       <img class="rounded-t-lg w-full h-50 object-cover" src="/projects/datascience.png" alt="Tienda UCN" />
       <div class="p-5">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Predicción de Ratings de Bebidas</h5>
-        <p class="mb-3 font-normal text-white">Proyecto de Ciencia de datos que utiliza Web Scraping para extraer datos de ratings de bebidas alcohólicas de una web, seguido de análisis exploratorio y limpieza de datos. Implementé modelos de regresión y clasificación para predecir ratings y categorizar las bebidas. Optimizando resultados mediante diferentes técnicas de ciencias de datos y análisis predictivos con aplicaciones prácticas.</p>
+
+        <!-- Título -->
+        <h5 class="text-shadow mb-2 text-2xl font-bold tracking-tight text-white">Predicción de Ratings de Bebidas</h5>
+        <p class="mb-3 font-normal text-white">Sistema de Análisis de datos para predecir ratings de bebidas extrayendo datos con Web Scrapping a una página web. Un Análisis exploratorio, Limpieza de datos, Modelos de regresión y clasificación para predecir y categorizar. Optimizando resultados mediante técnicas de data science y análisis predictivos con aplicaciones prácticas
+        </p>
+
+        <!-- Etiquetas de tecnologías -->
+        <div class="flex flex-wrap gap-2 mt-3 mb-3">
+          <div class="px-3 py-1 bg-gray-900 text-white text-sm font-medium rounded-lg">
+            Python
+          </div>
+          <div class="px-3 py-1 bg-gray-900 text-white text-sm font-medium rounded-lg">
+            Scikit-learn
+          </div>
+          <div class="px-3 py-1 bg-gray-900 text-white text-sm font-medium rounded-lg">
+            Mathplotlib
+          </div>
+          <div class="px-3 py-1 bg-gray-900 text-white text-sm font-medium rounded-lg">
+            Seaborn
+          </div>
+          <div class="px-3 py-1 bg-gray-900 text-white text-sm font-medium rounded-lg">
+            Selenium (Web Scraping)
+          </div>
+        </div>
+
+        <!-- Enlaces -->
         <div class="flex flex-wrap gap-2">
-          <a href="https://github.com/Talleres-Informatica/Taller1-DataScience" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-transparent border border-white rounded-lg hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300">
+          <a href="https://github.com/Talleres-Informatica/Taller1-DataScience" class="border-colorbtn inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-transparent border border-white rounded-lg hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300">
             <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
             </svg>
@@ -81,38 +181,112 @@
     </div>
 
     <!-- Proyecto 5 -->
-    <div class="max-w-sm bg-transparent rounded-lg shadow">
+    <div class="max-w-sm bg-gray-900 bg-opacity-30 rounded-lg shadow transform transition hover:scale-105">
       <img class="rounded-t-lg w-full h-50 object-cover" src="/projects/FondoSelene2.png" alt="Tienda UCN" />
       <div class="p-5">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">SELENE</h5>
-        <p class="mb-3 font-normal text-white">Videojuego 2D para PC de un solo jugador desarrollado en Unity.</p>
-        <p class="mb-3 text-white font-normal"><span class="font-bold">Sinopsis:</span> Un valiente gato debe recuperar las almas perdidas en el más allá, descubriendo islas flotantes, resolviendo puzzles y combatiendo contra enemigos.</p>
+
+        <!-- Título -->
+        <h5 class="text-shadow mb-2 text-2xl font-bold tracking-tight text-white">SELENE</h5>
+
+        <!-- Descripción -->
+        <p class="mb-3 font-normal text-white">Videojuego 2D para PC de un solo jugador. Disparos, Puzzles, Vidas, Enemigos con diversidad de patrones de ataque, Jefes, Puntajes, Coleccionables, Historia y Diseño (Personajes, Entorno, Interfaz y Animaciones).</p>
         <p class="mb-3 text-white font-normal"><span class="font-bold">Rol:</span> Líder de equipo y Programador principal en funcionalidades, historia y diseño.</p>
+
+        <!-- Sinopsis desplegable -->
+        <div>
+          <button (click)="toggleSinopsis('sinopsis-5')" class="flex items-center custom-gold-color font-bold mb-3">
+            Sinopsis
+            <svg [class.rotate-180]="expandedSinopsis['sinopsis-5']" class="w-4 h-4 ml-2 transition-transform transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <p *ngIf="expandedSinopsis['sinopsis-5']" class="text-white font-normal mb-3">
+            Un valiente gato debe recuperar las almas perdidas en el más allá, descubriendo islas flotantes, resolviendo puzzles, combatiendo diversos enemigos y descubriendo secretos.
+          </p>
+        </div>
+
+        <!-- Etiquetas de tecnologías -->
+        <div class="flex flex-wrap gap-2 mt-3 mb-3">
+          <div class="px-3 py-1 bg-gray-900 text-white text-sm font-medium rounded-lg">
+            Unity
+          </div>
+          <div class="px-3 py-1 bg-gray-900 text-white text-sm font-medium rounded-lg">
+            C#
+          </div>
+          <div class="px-3 py-1 bg-gray-900 text-white text-sm font-medium rounded-lg">
+            PixelStudio (Diseño de personajes y escenarios)
+          </div>
+        </div>
+
+        <!-- Enlaces -->
         <div class="flex flex-wrap gap-2">
-          <a href="https://github.com/xPrismatico/Selene-2D" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-transparent border border-white rounded-lg hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300">
+          <a href="https://github.com/xPrismatico/Selene-2D" class="border-colorbtn inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-transparent border border-white rounded-lg hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300">
             <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
             </svg>
             Repositorio
           </a>
+          <a href="https://drive.google.com/drive/folders/1oOS4WFf2p1FOZUPFx4dj-o8R_16knsE-"
+            class="border-colorbtn inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-transparent border border-white rounded-lg hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Descargar
+          </a>
         </div>
+
+
+
       </div>
     </div>
 
     <!-- Proyecto 6 -->
-    <div class="max-w-sm bg-transparent rounded-lg shadow">
+    <div class="max-w-sm bg-gray-900 bg-opacity-30 rounded-lg shadow transform transition hover:scale-105">
       <img class="rounded-t-lg w-full h-50 object-cover" src="/projects/selene2.png" alt="Tienda UCN" />
       <div class="p-5">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">SELENE: Vuelta a casa</h5>
-        <p class="mb-3 font-normal text-white">Videojuego 3D Hypercasual para Móviles y PC con 1 o 2 jugadores desarrollado en Unity.</p>
-        <p class="mb-3 text-white font-normal"><span class="font-bold">Sinopsis:</span> Un Gato de capa roja regresa a la vida y debe volver a su hogar en un camino desafiante entre dimensiones, proyectiles, obstáculos y enemigos. ¡Mejora tus poderes, consigue monedas, comida y personaliza a tu personaje!</p>
+
+        <!-- Título -->
+        <h5 class="text-shadow mb-2 text-2xl font-bold tracking-tight text-white">SELENE: Vuelta a casa</h5>
+
+        <!-- Descripción -->
+        <p class="mb-3 font-normal text-white">Videojuego 3D Hypercasual para Móviles y PC con 1 o 2 jugadores. Pantalla dividida, Guardado de datos, Tienda, Editar personaje, Mejorar habilidades, Puntajes, Enemigos, Historia y Diseño (Modelado de Personajes, Animaciones, Interfaz y Entorno).</p>
         <p class="mb-3 text-white font-normal"><span class="font-bold">Rol:</span> Líder de equipo y Programador principal en funcionalidades, historia y diseño.</p>
+
+        <!-- Sinopsis desplegable -->
+        <div>
+          <button (click)="toggleSinopsis('sinopsis-6')" class="flex items-center custom-gold-color font-bold mb-3">
+            Sinopsis
+            <svg [class.rotate-180]="expandedSinopsis['sinopsis-6']" class="w-4 h-4 ml-2 transition-transform transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <p *ngIf="expandedSinopsis['sinopsis-6']" class="text-white font-normal mb-3">
+            Un Gato de capa roja regresa a la vida y debe volver a su hogar en un camino desafiante entre dimensiones, proyectiles, obstáculos y enemigos. ¡Mejora tus poderes, consigue monedas, comida y personaliza a tu personaje!
+          </p>
+        </div>
+
+        <!-- Etiquetas de tecnologías -->
+        <div class="flex flex-wrap gap-2 mt-3 mb-3">
+          <div class="px-3 py-1 bg-gray-900 text-white text-sm font-medium rounded-lg">
+            Unity
+          </div>
+          <div class="px-3 py-1 bg-gray-900 text-white text-sm font-medium rounded-lg">
+            C#
+          </div>
+          <div class="px-3 py-1 bg-gray-900 text-white text-sm font-medium rounded-lg">
+            BlockBench (Modelado 3D y Animaciones)
+          </div>
+
+        </div>
+
+        <!-- Enlaces -->
         <div class="flex flex-wrap gap-2">
-          <a href="https://github.com/Team-xe/Proyecto-PIPA" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-transparent border border-white rounded-lg hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300">
+          <a href="https://github.com/Team-xe/Selene-Vuelta-a-Casa" class="border-colorbtn inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-transparent border border-white rounded-lg hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300">
             <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
             </svg>
             Repositorio
+          </a>
+          <a href="https://drive.google.com/drive/folders/1RsVCCFfieG5lmR7pz2dfUTeXlvIuLkbW?usp=sharing"
+            class="border-colorbtn inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-transparent border border-white rounded-lg hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Descargar
           </a>
         </div>
       </div>
@@ -120,3 +294,5 @@
 
   </div>
 </div>
+
+

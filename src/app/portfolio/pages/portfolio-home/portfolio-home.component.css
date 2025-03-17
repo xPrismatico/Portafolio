@@ -1,3 +1,5 @@
+
+
 .gradient-bg {
   background: radial-gradient(circle, rgb(9, 88, 153) 0%, rgb(12, 12, 24) 100%);
   min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la pantalla */
@@ -6,3 +8,72 @@
 .text-white {
   color: white;
 }
+
+.text-shadow {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Ajusta los valores según sea necesario */
+}
+
+
+
+
+
+.border-colorbtn {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem; /* Ajusta según el valor de rounded-lg en Tailwind */
+  background: transparent;
+  z-index: 1;
+  border: 2px solid transparent;
+  overflow: hidden;
+}
+
+.border-colorbtn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  padding: 2px; /* Ajusta el grosor del borde */
+  background: linear-gradient(to right, #37c3ff, #004576);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+
+.border-colorbtn:hover {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+
+}
+
+.border-colorbtn:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  padding: 2px; /* Ajusta el grosor del borde */
+  background: linear-gradient(to right, #ffffff, #ffffff);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+
+
