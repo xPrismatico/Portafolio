@@ -1,17 +1,55 @@
 <div>
   <h1 class="text-shadow text-white text-5xl font-bold text-center mb-10">Contáctame</h1>
 
-  <form class=" max-w-lg mx-auto px-4" (ngSubmit)="onSubmit()" #contactForm="ngForm">
+  <form class="max-w-lg mx-auto px-4" (ngSubmit)="onSubmit()" #contactForm="ngForm">
+    <!-- Campo Nombre -->
     <div class="mb-6">
-      <input type="text" id="name" class="bg-transparent border border-white text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Tu nombre" required [(ngModel)]="name" name="name" />
+      <input
+        type="text"
+        id="name"
+        class="bg-transparent border border-white text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+        placeholder="Tu nombre"
+        required
+        [(ngModel)]="name"
+        name="name"
+      />
+      <p *ngIf="errors.name" class="text-red-500 text-sm mt-1">{{ errors.name }}</p>
     </div>
+
+    <!-- Campo Email -->
     <div class="mb-6">
-      <input type="email" id="email" class="bg-transparent border border-white text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Tu correo electrónico" required [(ngModel)]="email" name="email" />
+      <input
+        type="email"
+        id="email"
+        class="bg-transparent border border-white text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+        placeholder="Tu correo electrónico"
+        required
+        [(ngModel)]="email"
+        name="email"
+      />
+      <p *ngIf="errors.email" class="text-red-500 text-sm mt-1">{{ errors.email }}</p>
     </div>
+
+    <!-- Campo Mensaje -->
     <div class="mb-6">
-      <textarea id="message" rows="6" class="bg-transparent border border-white text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="¿Cómo puedo ayudarte?" required [(ngModel)]="message" name="message"></textarea>
+      <textarea
+        id="message"
+        rows="6"
+        class="bg-transparent border border-white text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+        placeholder="¿Cómo puedo ayudarte?"
+        required
+        [(ngModel)]="message"
+        name="message"
+      ></textarea>
+      <p *ngIf="errors.message" class="text-red-500 text-sm mt-1">{{ errors.message }}</p>
     </div>
-    <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center" [disabled]="isSubmitting">
+
+    <!-- Botón Enviar -->
+    <button
+      type="submit"
+      class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+      [disabled]="isSubmitting"
+    >
       {{ isSubmitting ? 'Enviando...' : 'Enviar' }}
     </button>
   </form>
@@ -19,10 +57,13 @@
   <!-- Mensaje emergente -->
   <div *ngIf="showSuccessMessage" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
     <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-      <p class="text-lg font-bold">¡Formulario enviado correctamente!</p>
-      <button class="mt-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center" (click)="closePopup()">Cerrar</button>
+      <p class="mt-2 text-lg font-bold">¡Formulario enviado correctamente!</p>
+      <button
+        class="mt-8 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+        (click)="closePopup()"
+      >
+        Cerrar
+      </button>
     </div>
   </div>
-
-
 </div>
