@@ -9,3 +9,13 @@
 .text-shadow {
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Ajusta los valores según sea necesario */
 }
+
+.border-colorbtn {
+  position: relative;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem; /* Ajusta según el valor de rounded-lg en Tailwind */
+  background: transparent;
+  z-index: 1;
+  /*border: 2px solid transparent;*/
+  overflow: hidden;
+}

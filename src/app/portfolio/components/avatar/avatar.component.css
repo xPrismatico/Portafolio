@@ -3,12 +3,12 @@
 }
 
 .custom-h1-color {
-  background: linear-gradient(to right, #ffae00, #ff920c);
+  background: linear-gradient(to right, #ffbc2c, #ff920c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .text-shadow {
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Ajusta los valores según sea necesario */
+  text-shadow: 3px 3px 6px rgba(59, 51, 0, 0.7); /* Ajusta los valores según sea necesario */
 }
