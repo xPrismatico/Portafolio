@@ -1,23 +1,39 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'portfolio-navbar',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
-export class NavbarComponent {
-  isMenuOpen = false;
+export class NavbarComponent implements OnInit {
+  activeSection: string = 'sobre-mi';
 
-  toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
-    const navbar = document.getElementById('navbar-sticky');
-    if (navbar) {
-      if (this.isMenuOpen) {
-        navbar.classList.remove('hidden');
-      } else {
-        navbar.classList.add('hidden');
-      }
+  ngOnInit() {
+    window.addEventListener('scroll', this.onScroll.bind(this));
+  }
+
+  scrollTo(id: string) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  onScroll() {
+    const sobreMi = document.getElementById('sobre-mi');
+    const habilidades = document.querySelector('.portfolio-info-card, #habilidades');
+    const proyectos = document.getElementById('proyectos');
+
+    const scrollY = window.scrollY + window.innerHeight / 3;
+
+    if (proyectos && proyectos.offsetTop <= scrollY) {
+      this.activeSection = 'proyectos';
+    } else if (habilidades && habilidades.getBoundingClientRect().top + window.scrollY <= scrollY) {
+      this.activeSection = 'habilidades';
+    } else if (sobreMi && sobreMi.offsetTop <= scrollY) {
+      this.activeSection = 'sobre-mi';
     }
   }
 }
