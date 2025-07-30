@@ -9,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   activeSection: string = 'sobre-mi';
+  isMenuOpen: boolean = false;
 
   ngOnInit() {
     window.addEventListener('scroll', this.onScroll.bind(this));
+  }
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
   }
 
   scrollTo(id: string) {
@@ -19,6 +24,8 @@ export class NavbarComponent implements OnInit {
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
     }
+    // Cerrar el menú móvil después de hacer clic en un enlace
+    this.isMenuOpen = false;
   }
 
   onScroll() {
